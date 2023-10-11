@@ -8,13 +8,19 @@ import java.math.BigDecimal;
 
 @AllArgsConstructor
 @Getter
-@Setter
 public class Order {
     private final String userId;
     private final String orderId;
     private final BigDecimal amount;
+    private final String email;
 
+    @Override
     public String toString() {
-        return "{ userId: " + this.userId + " - orderId: " + this.orderId + " - amount: " + this.amount + "}";
+        return "Order {" +
+                "userId='" + userId + '\'' +
+                ", orderId='" + orderId + '\'' +
+                ", amount=" + amount +
+                ", email=" + email +
+                '}';
     }
 }

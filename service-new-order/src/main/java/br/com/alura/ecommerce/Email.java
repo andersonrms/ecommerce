@@ -14,6 +14,10 @@ public class Email {
 
     @Override
     public String toString() {
-        return "{ userId: " + this.userId + " - userEmail: " + this.userEmail + " - subject: " + this.emailSubject + "}";
+        return "Email {" +
+                "userId='" + userId + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                ", emailSubject='" + emailSubject + '\'' +
+                '}';
     }
 }
